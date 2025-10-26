@@ -16,6 +16,7 @@ Handwritten-Digit-Recognition/
 │   └── mnist_cnn_model.h5
 ├── images/
 │   ├── training_plot.png
+|   ├── training_plot2.png
 │   ├── confusion_matrix.png
 │   └── predictions.png
 └── README.md
