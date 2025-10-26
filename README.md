@@ -1,13 +1,62 @@
-## 📊 Results & Discussion
+# 🧠 Handwritten Digit Recognition (MNIST)
 
-The project effectively illustrates how deep learning works for handwritten digit recognition.
+Deep learning project that classifies handwritten digits (0–9) using neural networks and CNNs on the MNIST dataset.
 
+---
 
-Even without convolutional layers, the baseline **Dense Neural Network** demonstrated strong generalisation, achieving approximately **99.2% validation accuracy**.  
-On unseen data, however, the **Convolutional Neural Network (CNN)** achieved **99.33% test accuracy**, further enhancing stability and spatial feature extraction.
+## 📁 Project Structure
+```text
+Handwritten-Digit-Recognition/
+├── data/
+│   ├── mnist_train.csv
+│   └── mnist_test.csv
+├── notebooks/
+│   └── handwritten_digit_recognition.ipynb
+├── models/
+│   └── mnist_cnn_model.h5
+├── images/
+│   ├── training_plot.png
+│   ├── confusion_matrix.png
+│   └── predictions.png
+└── README.md
+```
 
-The majority of the digits were correctly classified, according to the **confusion matrix**, with only a small amount of confusion between visually similar digits (for example, 4 vs. 9 or 5 vs. 8).  
-F1-scores, precision, and recall were all above **0.99**, suggesting steady and balanced model performance.
+---
+
+## ⚙️ Setup
+```bash
+pip install pandas numpy matplotlib seaborn tensorflow scikit-learn
+```
+
+---
+
+## 🚀 Run Notebook
+```bash
+git clone https://github.com/Laithwm/Handwritten-Digit-Recognition.git
+cd Handwritten-Digit-Recognition
+jupyter notebook notebooks/handwritten_digit_recognition.ipynb
+```
+
+---
+
+## 📊 Results
+- Dense Neural Network → ~99.2% accuracy  
+- CNN Model → **99.33% test accuracy**  
+- Most errors occurred between visually similar digits (e.g., 4 vs 9).  
+- Precision, recall, and F1-scores were all above 0.99.
+
+---
+
+## 🧠 Skills
+- Data preprocessing & normalization  
+- Neural network & CNN modeling  
+- Model evaluation & visualization  
+
+---
+
+**Author:** Laith Waqas
 
 Convolutional architectures are crucial for image-based classification tasks, as evidenced by the CNN model's overall superior ability to capture local image features.
 
+📍 Dublin, Ireland   
+💼 [LinkedIn](https://www.linkedin.com/in/laithwm)
